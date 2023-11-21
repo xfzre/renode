@@ -21,7 +21,7 @@ namespace Antmicro.Renode
         public static void Main(string[] args)
         {
             AppDomain.CurrentDomain.ProcessExit += (_, __) => Emulator.Exit();
-
+ 
             var options = new Options();
             var optionsParser = new OptionsParser.OptionsParser();
             var optionsParsed = optionsParser.Parse(options, args);
